@@ -1,0 +1,15 @@
+D:\MYWORKITSTEP\IDK_Api\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+D:\MYWORKITSTEP\IDK_Api\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+D:\MYWORKITSTEP\IDK_Api\DataAccess\bin\Debug\net8.0\DataAccess.dll
+D:\MYWORKITSTEP\IDK_Api\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.sourcelink.json
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.dll
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+D:\MYWORKITSTEP\IDK_Api\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

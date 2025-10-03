@@ -1,0 +1,428 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\MYWORKITSTEP\\IDK_Api\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\controllers\\musicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\controllers\\musicscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|d:\\myworkitstep\\idk_api\\businesslogic\\dtos\\weekdaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\dtos\\weekdaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|d:\\myworkitstep\\idk_api\\businesslogic\\configuration\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\configuration\\mapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\data\\entities\\weekday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\data\\entities\\weekday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\data\\entities\\itemweekday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\data\\entities\\itemweekday.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251003125119_UpdateDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:DataAccess\\Migrations\\20251003125119_UpdateDay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|d:\\myworkitstep\\idk_api\\businesslogic\\dtos\\itemweekdaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\dtos\\itemweekdaydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|d:\\myworkitstep\\idk_api\\businesslogic\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E97C067-515E-4776-98CC-0BB8E02B1704}|BusinessLogic\\BusinessLogic.csproj|solutionrelative:businesslogic\\dtos\\itemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\data\\entities\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\data\\entities\\item.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\idk_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\idk_api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\data\\entities\\homeworkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\data\\entities\\homeworkitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|d:\\myworkitstep\\idk_api\\idk_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{E5EEB001-EF67-48BF-962A-DE7C9291695A}|IDK_Api\\IDK_Api.csproj|solutionrelative:idk_api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Maksym\\AppData\\Roaming\\Microsoft\\UserSecrets\\db92f99c-e2d6-4d18-80cf-e789562c9bf8\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20250930215325_nextdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20250930215325_nextdata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20250930214026_initdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20250930214026_initdatabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002202357_addpwe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002202357_addpwe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002202305_addbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002202305_addbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002201939_updare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002201939_updare.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002201615_update-data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002201615_update-data.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002201508_getitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002201508_getitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251002194728_mtmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251002194728_mtmg.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|d:\\myworkitstep\\idk_api\\dataaccess\\migrations\\20251003125007_updatdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D6C0A39-DC81-4582-B0F2-82AD18B3D6DF}|DataAccess\\DataAccess.csproj|solutionrelative:dataaccess\\migrations\\20251003125007_updatdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 7,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WeekDayDto.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\WeekDayDto.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\DTOs\\WeekDayDto.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\WeekDayDto.cs",
+              "RelativeToolTip": "BusinessLogic\\DTOs\\WeekDayDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T14:43:26.284Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MapperProfile.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\Configuration\\MapperProfile.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\Configuration\\MapperProfile.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\Configuration\\MapperProfile.cs",
+              "RelativeToolTip": "BusinessLogic\\Configuration\\MapperProfile.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T11:44:08.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ItemWeekDay.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\ItemWeekDay.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Data\\Entities\\ItemWeekDay.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\ItemWeekDay.cs",
+              "RelativeToolTip": "DataAccess\\Data\\Entities\\ItemWeekDay.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:03:35.846Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ItemWeekDayDto.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\ItemWeekDayDto.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\DTOs\\ItemWeekDayDto.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\ItemWeekDayDto.cs",
+              "RelativeToolTip": "BusinessLogic\\DTOs\\ItemWeekDayDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:44:38.07Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ItemDto.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\ItemDto.cs",
+              "RelativeDocumentMoniker": "BusinessLogic\\DTOs\\ItemDto.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\DTOs\\ItemDto.cs",
+              "RelativeToolTip": "BusinessLogic\\DTOs\\ItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:49:18.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "20251003125007_UpdatDb.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251003125007_UpdatDb.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251003125007_UpdatDb.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251003125007_UpdatDb.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251003125007_UpdatDb.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:50:08.122Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MusicsController.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Controllers\\MusicsController.cs",
+              "RelativeDocumentMoniker": "IDK_Api\\Controllers\\MusicsController.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Controllers\\MusicsController.cs",
+              "RelativeToolTip": "IDK_Api\\Controllers\\MusicsController.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAwHMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-29T17:00:57.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "20251003125119_UpdateDay.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251003125119_UpdateDay.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251003125119_UpdateDay.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251003125119_UpdateDay.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251003125119_UpdateDay.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T12:51:19.357Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeekDay.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\WeekDay.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Data\\Entities\\WeekDay.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\WeekDay.cs",
+              "RelativeToolTip": "DataAccess\\Data\\Entities\\WeekDay.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAsAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:14:08.141Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Program.cs",
+              "RelativeDocumentMoniker": "IDK_Api\\Program.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Program.cs",
+              "RelativeToolTip": "IDK_Api\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:25:06.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "IDK_Api\\WeatherForecast.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\WeatherForecast.cs",
+              "RelativeToolTip": "IDK_Api\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-03T11:42:55.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Item.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\Item.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Data\\Entities\\Item.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\Item.cs",
+              "RelativeToolTip": "DataAccess\\Data\\Entities\\Item.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAgwAoAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:11:16.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IDK_Api.csproj",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\IDK_Api.csproj",
+              "RelativeDocumentMoniker": "IDK_Api\\IDK_Api.csproj",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\IDK_Api.csproj",
+              "RelativeToolTip": "IDK_Api\\IDK_Api.csproj",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAUwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-10-03T11:40:32.099Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "HomeWorkItem.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\HomeWorkItem.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Data\\Entities\\HomeWorkItem.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Data\\Entities\\HomeWorkItem.cs",
+              "RelativeToolTip": "DataAccess\\Data\\Entities\\HomeWorkItem.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAiwAwAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:10:10.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "20251002202357_Addpwe.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002202357_Addpwe.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002202357_Addpwe.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002202357_Addpwe.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002202357_Addpwe.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:23:57.92Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "IDK_Api\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\Properties\\launchSettings.json",
+              "RelativeToolTip": "IDK_Api\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-02T20:49:01.196Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\appsettings.json",
+              "RelativeDocumentMoniker": "IDK_Api\\appsettings.json",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\IDK_Api\\appsettings.json",
+              "RelativeToolTip": "IDK_Api\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-02T20:48:55.58Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "20251002202305_AddBd.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002202305_AddBd.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002202305_AddBd.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002202305_AddBd.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002202305_AddBd.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:23:05.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20251002201939_Updare.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201939_Updare.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002201939_Updare.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201939_Updare.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002201939_Updare.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:19:39.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20251002201615_Update-Data.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201615_Update-Data.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002201615_Update-Data.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201615_Update-Data.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002201615_Update-Data.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:16:15.425Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "20251002201508_GetItem.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201508_GetItem.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002201508_GetItem.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002201508_GetItem.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002201508_GetItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T20:15:08.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "20251002194728_Mtmg.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002194728_Mtmg.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20251002194728_Mtmg.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20251002194728_Mtmg.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20251002194728_Mtmg.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T19:47:28.993Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\Maksym\\AppData\\Roaming\\Microsoft\\UserSecrets\\db92f99c-e2d6-4d18-80cf-e789562c9bf8\\secrets.json",
+              "ToolTip": "C:\\Users\\Maksym\\AppData\\Roaming\\Microsoft\\UserSecrets\\db92f99c-e2d6-4d18-80cf-e789562c9bf8\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-09-30T21:39:15.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "20250930214026_InitDatabase.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20250930214026_InitDatabase.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20250930214026_InitDatabase.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20250930214026_InitDatabase.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20250930214026_InitDatabase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:40:26.442Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20250930215325_NextData.cs",
+              "DocumentMoniker": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20250930215325_NextData.cs",
+              "RelativeDocumentMoniker": "DataAccess\\Migrations\\20250930215325_NextData.cs",
+              "ToolTip": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\Migrations\\20250930215325_NextData.cs",
+              "RelativeToolTip": "DataAccess\\Migrations\\20250930215325_NextData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-30T21:53:25.185Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
