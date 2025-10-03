@@ -1,0 +1,226 @@
+.Login-class {
+    width: 100vw;
+    height: 80vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    overflow: hidden;
+    z-index: 3;
+
+}
+
+.Text-class {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    z-index: 3;
+
+}
+
+.Button-class {
+    width: 300px;
+    height: 70px;
+    border-radius: 40px;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    transition: all 1s ease-in-out;
+    box-sizing: border-box;
+    padding: 8px;
+    z-index: 3;
+
+    position: relative;
+}
+
+
+
+.PurpleBtnLeft {
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 32px;
+
+    background-color: #8f8bff;
+    transition: all 0.3s ease-in-out;
+    /* color: wheat; */
+    border: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;   
+    z-index: 3;
+
+    /* box-shadow: 0px 0px 10px 3px rgb(202, 202, 202); */
+}
+.PurpleBtnRight {
+    position: absolute;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    border-radius: 32px;
+    transition: all 0.3s ease-in-out;
+
+    z-index: 3;
+    background-color: #8f8bff;
+    /* color: wheat; */
+    border: 0;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;   
+    /* box-shadow: 0px 0px 10px 3px rgb(202, 202, 202); */
+}
+.InlinePading-div-class
+{
+    width: 100%;
+    height: 100%;
+    border-radius: 32px;
+    overflow: hidden;
+    /* background-color: red; */
+    position: relative;
+    z-index: 3;
+
+}
+.Label-class {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 3;
+
+}
+
+.Label-class input {
+    width: 300px;
+    height: 50px;
+    background-color: #f8f8f8;
+    outline: none;
+    border: 0;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding: 8px;
+    padding-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    z-index: 3;
+
+}
+
+.Label-class input:focus {
+    border: 1px solid rgb(237, 237, 237);
+}
+
+.LoginBtn-class {
+    width: 300px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: #9568fd;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    border: 0;
+    outline: none;
+    margin-top: 15px;
+    z-index: 3;
+    transition:  all 0.3s ease-in-out;
+}
+.LoginBtn-class:hover
+{
+
+    transform: scale(1.05);
+}
+.LoginBtn-class:active {
+    background-color:#9f76ff;
+    z-index: 3;
+
+}
+
+.TextLogin-classLeft {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    /* background-color: red; */
+    /* margin: 10px; */
+    height: 90%;
+    left: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    /* pointer-events: none; */
+    background-color: transparent;
+    border: 0;
+    z-index: 4;
+    -webkit-tap-highlight-color: transparent;   
+    color: black;
+
+}
+
+.TextLogin-classRight {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 50%;
+    /* background-color: blue; */
+    height: 90%;
+    right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    position: absolute;
+    /* pointer-events: none; */
+    background-color: transparent;
+    color: black;
+    border: 0;
+    -webkit-tap-highlight-color: transparent;   
+
+    z-index: 4;
+
+}
+
+
+#FirstBlobPosId
+{
+    position:absolute;
+    top: -10px;
+    left: 0;
+    z-index: 0;
+    width: clamp(100px,50vw,300px);
+}
+#SecondBlobPosId
+{
+    position:absolute;
+    top: -10px;
+    left: -10px;
+    z-index:1;
+    width: clamp(100px,50vw,300px);
+}
+#ThirdBlobPosId{
+    position:absolute;
+ 
+  
+    /* transform: rotateZ(-10deg); */
+
+    bottom: -15px;
+    right: -11px;
+    z-index:1;
+    width: clamp(100px,60   vw,400px);
+}
+#FourBlobPosId
+{
+     position:absolute;
+ 
+  
+    transform: rotateZ(180deg);
+    bottom: -15px;
+    right: -10px;
+    z-index:0;
+    width: clamp(100px,60vw,420px);
+}

@@ -1,0 +1,65 @@
+.headerRow-class
+{
+    width: 100%;
+    height: 100%;
+    /* background-color: red; */
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+.LinkBtnActive-class
+{
+    width: auto;
+    height: 100%;
+    
+    border-top: 3px solid #9e72fe;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    
+}
+
+.LinkBtnActive-class p
+{
+    margin: 0;
+        font-size: clamp(13px,20px,5vw);
+
+    text-decoration: none;
+    color: #9e72fe;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.LinkBtnDisable-class
+{
+    width: auto;
+    height: 100%;
+    
+    /* border-top: 3px solid #9e72fe; */
+    padding-left: 3vw;
+    padding-right: 3vw;
+
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+
+    
+}
+.LinkBtnDisable-class p
+{
+    margin: 0;
+    font-size: clamp(13px,20px,5vw);
+    text-decoration: none;
+    color: #dddddd;
+    font-weight: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}

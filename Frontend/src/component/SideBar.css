@@ -1,0 +1,33 @@
+.SideBar-class
+{
+    /* width: 100%; */
+    /* height: 300px;/ */
+    width: 100%;
+    height: 100%;
+    /* transform-origin: 0 0; */
+    /* background-color: rebeccapurple; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+.CalendarDate-class
+{
+    display: flex;
+     justify-content: start;
+    align-items: start;
+}
+
+.BackItems
+{
+    width: 95%;
+    height: min-content;
+    box-sizing: border-box;
+    padding: 10px;
+    /* padding-right: 25px; */
+    /* background-color: rebeccapurple; */
+    /* border-bottom: 1px solid black; */
+
+}
