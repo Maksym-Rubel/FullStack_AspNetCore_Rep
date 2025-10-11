@@ -23,6 +23,7 @@ export default function ItemsSelectView({index,id, name }) {
             return "13:20-14:40"
         }
     }
+    
     return (
         <div className='BackGroundItem-class'>
           

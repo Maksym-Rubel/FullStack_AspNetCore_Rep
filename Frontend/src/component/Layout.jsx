@@ -13,7 +13,6 @@ export default function Layout() {
             <div className='GridLayout-class'>
                 <header className='header-class'>
                     <HeaderMain></HeaderMain>
-                    {/* <div>Hello</div> */}
                 </header>
                 <main>
                     <Outlet></Outlet>

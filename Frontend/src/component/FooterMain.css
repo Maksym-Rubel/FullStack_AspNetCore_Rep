@@ -1,6 +1,40 @@
 .FooterMain
 {
-    height: 200px;
+    height: clamp(100px,30vw,300px);
     width: 100%;
+        background:linear-gradient(to top,#8f8bff79,#ffffff8b) ;
+
+    display: flex;
+    flex-direction: row;
+
+}
+.InformationDiv-class
+{
+    width: 50%;
+    font-family: 'Bogart Trial';
     /* background-color: red; */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5%;
+    font-size: clamp(7px,2vw,20px);
+}
+.ImageTab-class
+{
+    /* background-color: red; */
+    width: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.ImageTab-class img 
+{
+    position: absolute;
+    left: 15%;
+    width: clamp(100px,70%,350px);
+}
+#BolderP
+{
+    font-weight: bold;
 }

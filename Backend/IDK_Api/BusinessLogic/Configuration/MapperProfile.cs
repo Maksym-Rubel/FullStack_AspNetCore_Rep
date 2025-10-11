@@ -14,9 +14,19 @@ namespace BusinessLogic.Configuration
         public MapperProfile()
         {
             CreateMap<ItemDto, Item>();
-            CreateMap<ItemWeekDayDto, ItemWeekDay>();
-            CreateMap<WeekDayDto, WeekDay>();
+            CreateMap<Item, ItemDto>();
 
+            CreateMap<Item, CreateItemDto>();
+            CreateMap<CreateItemDto, Item>();
+
+            CreateMap<ItemWeekDayDto, ItemWeekDay>();
+            CreateMap<ItemWeekDay, ItemWeekDayDto>();
+
+            CreateMap<WeekDayDto, WeekDay>();
+            CreateMap<WeekDay, WeekDayDto>();
+
+            CreateMap<HomeWorkItemDto, HomeWorkItem>();
+            CreateMap<HomeWorkItem, HomeWorkItemDto>();
         }
     }
 }

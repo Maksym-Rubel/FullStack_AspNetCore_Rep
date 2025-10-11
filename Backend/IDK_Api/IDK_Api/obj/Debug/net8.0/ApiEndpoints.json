@@ -1,40 +1,8 @@
 [
   {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
-    "Method": "CreateHomeWorkItem",
-    "RelativePath": "api/Musics",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "DataAccess.Data.Entities.HomeWorkItem",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
-    "Method": "CreateItem",
-    "RelativePath": "api/Musics/CreateItem",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "BusinessLogic.DTOs.ItemDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
+    "ContainingType": "IDK_Api.Controllers.BaseController",
     "Method": "CreateItemWeekDay",
-    "RelativePath": "api/Musics/CreateItemWeekDay",
+    "RelativePath": "api/Base/CreateItemWeekDay",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -48,9 +16,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
+    "ContainingType": "IDK_Api.Controllers.BaseController",
     "Method": "CreateWeekDay",
-    "RelativePath": "api/Musics/CreateWeekDay",
+    "RelativePath": "api/Base/CreateWeekDay",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -64,9 +32,67 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
+    "ContainingType": "IDK_Api.Controllers.HomeworkController",
+    "Method": "CreateHomeWork",
+    "RelativePath": "api/Homework/CreateHomeWork",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BusinessLogic.DTOs.HomeWorkItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDK_Api.Controllers.HomeworkController",
+    "Method": "GeHomeWorkItems",
+    "RelativePath": "api/Homework/GeHomeWorkItems",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dateTime",
+        "Type": "System.DateTime",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDK_Api.Controllers.ItemsController",
+    "Method": "CreateItem",
+    "RelativePath": "api/Items/CreateItem",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "BusinessLogic.DTOs.CreateItemDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDK_Api.Controllers.ItemsController",
+    "Method": "GetAllItem",
+    "RelativePath": "api/Items/GetAllItem",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "IDK_Api.Controllers.ItemsController",
     "Method": "GetDayItems",
-    "RelativePath": "api/Musics/GetDayItems",
+    "RelativePath": "api/Items/GetDayItems",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -85,16 +111,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "IDK_Api.Controllers.MusicsController",
-    "Method": "GetOneHomeWorkItem",
-    "RelativePath": "api/Musics/GetOneHomeWorkItem",
+    "ContainingType": "IDK_Api.Controllers.ItemsController",
+    "Method": "GetOneItem",
+    "RelativePath": "api/Items/GetOneItem",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "dateTime",
-        "Type": "System.DateTime",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],

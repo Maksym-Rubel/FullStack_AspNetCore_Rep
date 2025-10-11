@@ -11,7 +11,7 @@ namespace DataAccess.Data.Entities
         public int Id { get; set; }
         public int ItemId { get; set; } 
         public Item? Item { get; set; }
-        public string Decription {  get; set; }
+        public string Decription         {  get; set; }
 
         public DateTime HomeWorkDate { get; set; }
 

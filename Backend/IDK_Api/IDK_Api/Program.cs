@@ -1,6 +1,12 @@
 using AutoMapper;
 using BusinessLogic.Configuration;
+using BusinessLogic.Interface;
+using BusinessLogic.Services;
+using BusinessLogic.Validators;
 using DataAccess.Data;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,17 +20,27 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowFrontend", policy =>
     {
         policy.WithOrigins("http://192.168.1.121:5173")
-        .AllowAnyMethod()
+        .AllowAnyMethod()       
         .AllowAnyHeader();
 
     });
 
 });
+
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 
 builder.Services.AddDbContext<SongDbContext>(options => options.UseSqlServer("Data Source=DESKTOP-JELVTGO\\SQLEXPRESS;Initial Catalog=SongPlayerDb;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;Application Intent=ReadWrite;MultiSubnetFailover=False"));
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddFluentValidationAutoValidation();
+builder.Services.AddFluentValidationClientsideAdapters();
+builder.Services.AddValidatorsFromAssemblyContaining<CreateItemDtoVal>();
+
+builder.Services.AddScoped<IItemsInterface, ItemsService>();
+
 
 var app = builder.Build();
 

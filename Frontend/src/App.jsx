@@ -7,6 +7,7 @@ import Layout from './component/Layout'
 import Login from './component/Login'
 
 import StartPage from './component/StartPage'
+import HomeWorkForm from './component/HomeWorkForm'
 
 function App() {
   
@@ -15,6 +16,8 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
+          <Route path='/AddHome' element={<HomeWorkForm/>}/>
+
           <Route path='/login' element={<Login/>}/>
           <Route path="/" element={<Layout/>}>
               <Route index element={<StartPage/>}></Route>

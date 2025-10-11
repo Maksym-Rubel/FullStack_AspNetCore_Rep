@@ -4729,11 +4729,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\DataAccess.csproj",
+      "projectUniqueName": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\DataAccess\\DataAccess.csproj",
       "projectName": "DataAccess",
-      "projectPath": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\DataAccess.csproj",
+      "projectPath": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\DataAccess\\DataAccess.csproj",
       "packagesPath": "C:\\Users\\Maksym\\.nuget\\packages\\",
-      "outputPath": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\obj\\",
+      "outputPath": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

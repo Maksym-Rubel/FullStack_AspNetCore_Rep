@@ -1,0 +1,16 @@
+.canvas-class {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #060010;
+
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width:800px) {
+    .canvas-class {
+        opacity: 0;
+
+    }
+}

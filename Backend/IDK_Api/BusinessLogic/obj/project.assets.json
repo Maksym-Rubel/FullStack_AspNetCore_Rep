@@ -65,6 +65,19 @@
           }
         }
       },
+      "FluentValidation/12.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -1038,6 +1051,21 @@
         "azureicon.png",
         "lib/netstandard2.0/Azure.Identity.dll",
         "lib/netstandard2.0/Azure.Identity.xml"
+      ]
+    },
+    "FluentValidation/12.0.0": {
+      "sha512": "8NVLxtMUXynRHJIX3Hn1ACovaqZIJASufXIIFkD0EUbcd5PmMsL1xUD5h548gCezJ5BzlITaR9CAMrGe29aWpA==",
+      "type": "package",
+      "path": "fluentvalidation/12.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "fluent-validation-icon.png",
+        "fluentvalidation.12.0.0.nupkg.sha512",
+        "fluentvalidation.nuspec",
+        "lib/net8.0/FluentValidation.dll",
+        "lib/net8.0/FluentValidation.xml"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2535,7 +2563,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "AutoMapper >= 15.0.1",
-      "DataAccess >= 1.0.0"
+      "DataAccess >= 1.0.0",
+      "FluentValidation >= 12.0.0"
     ]
   },
   "packageFolders": {
@@ -2545,11 +2574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\BusinessLogic.csproj",
+      "projectUniqueName": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\BusinessLogic\\BusinessLogic.csproj",
       "projectName": "BusinessLogic",
-      "projectPath": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\BusinessLogic.csproj",
+      "projectPath": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\BusinessLogic\\BusinessLogic.csproj",
       "packagesPath": "C:\\Users\\Maksym\\.nuget\\packages\\",
-      "outputPath": "D:\\MYWORKITSTEP\\IDK_Api\\BusinessLogic\\obj\\",
+      "outputPath": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\BusinessLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2570,8 +2599,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\DataAccess.csproj": {
-              "projectPath": "D:\\MYWORKITSTEP\\IDK_Api\\DataAccess\\DataAccess.csproj"
+            "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\DataAccess\\DataAccess.csproj": {
+              "projectPath": "D:\\MYWORKITSTEP\\ASPNETCore\\Backend\\IDK_Api\\DataAccess\\DataAccess.csproj"
             }
           }
         }
@@ -2595,6 +2624,10 @@
           "AutoMapper": {
             "target": "Package",
             "version": "[15.0.1, )"
+          },
+          "FluentValidation": {
+            "target": "Package",
+            "version": "[12.0.0, )"
           }
         },
         "imports": [

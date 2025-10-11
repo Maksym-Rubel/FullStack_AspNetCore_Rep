@@ -1,7 +1,11 @@
 .Login-class {
-    width: 100vw;
-    height: 80vh;
-    background-color: white;
+    width: min-content;
+    height: min-content;
+    padding-top: clamp(20px,10%,50px);
+    padding-bottom: clamp(20px,10%,50px);
+
+
+    /* background-color: #060010; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,12 +13,31 @@
     gap: 15px;
     overflow: hidden;
     z-index: 3;
+    position: absolute;
+    /* background-color: rgba(195, 0, 255, 0.03); */
+    /* backdrop-filter: blur(30px); */
+    /* border: 2px rgba(0, 0, 0, 0.033) solid; */
+    top: 50%;
+    left: 50%;
+    border-radius: 30px;
 
+    transform: translate(-50%,-50%);
 }
+@media(max-width:800px)
+{
+    .Login-class {
+        border: 0;
+        backdrop-filter: blur(0px);
+        background-color: transparent;
 
+    }
+}
 .Text-class {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     z-index: 3;
+    color: white;
+    font-size: clamp(10px,10vw,30px);
+    font-weight: bolder;
 
 }
 
@@ -118,8 +141,8 @@
     width: 300px;
     height: 50px;
     border-radius: 30px;
-    background-color: #9568fd;
-    color: white;
+    background-color: white;
+    color: black;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 1px;
     font-weight: bold;
@@ -136,7 +159,8 @@
     transform: scale(1.05);
 }
 .LoginBtn-class:active {
-    background-color:#9f76ff;
+    background-color: white;
+
     z-index: 3;
 
 }

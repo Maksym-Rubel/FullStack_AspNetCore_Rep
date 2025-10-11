@@ -31,3 +31,20 @@
     /* border-bottom: 1px solid black; */
 
 }
+#ParyId
+{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 5%;
+    /* background-color: red; */
+    text-align: start;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+.HomeworkNull
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}   
