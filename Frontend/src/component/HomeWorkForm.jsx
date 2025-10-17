@@ -2,52 +2,64 @@ import React, { useState } from 'react'
 import "./HomeWorkForm.css"
 import { useEffect } from 'react';
 import dayjs from 'dayjs';
+import axios from 'axios';
+import AxiosInstance from '../Interceptors';
+import { tokenService } from '../services/token.service';
 export default function HomeWorkForm() {
 
   const [ItemId, SetItemId] = useState(1);
   const [Desc, SetDesc] = useState("");
   const [Dates, SetDates] = useState('');
   const [ResObj, SetRes] = useState([]);
+  const [IsControl, SetIsControl] = useState(false);
 
 
 
 
   async function GetItems() {
-    var data = await fetch("http://192.168.1.121:5212/api/Items/GetAllItem");
-    var res = await data.json();
+    axios.get("http://192.168.1.121:5212/api/Items/GetAllItem", {
+      headers: {
+        Authorization: `Bearer ${tokenService.get()}`
 
-    SetRes(res);
+      }
+    }).then((res) => SetRes(res.data))
   }
+
+
+  useEffect(() => {
+    console.log(ResObj);
+  }, [ResObj])
   useEffect(() => {
     console.log(ItemId);
   }, [ItemId])
   useEffect(() => {
     GetItems();
   }, [])
+
+
   async function CreateHome() {
     var homework = {
       itemId: ItemId,
       decription: Desc,
-      homeWorkDate: Dates
+      homeWorkDate: Dates,
+      IsControlWork: IsControl
     }
-    await fetch(`http://192.168.1.121:5212/api/Homework/CreateHomeWork`,
-      {
-        method: "POST",
+    try {
+      axios.post("http://192.168.1.121:5212/api/Homework/CreateHomeWork", homework, {
         headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify(homework)
-      });
-    // var response = await data.json();
-    // return response;
+          Authorization: `Bearer ${tokenService.get()}`
+
+        }
+      }).then((res) => console.log(res.status))
+    } catch (error) {
+      console.log(error)
+    }
   }
 
   return (
     <div className='FormBackground'>
       <label>
         Id предмета
-        {/* <input className='numberInput' value={ItemId} onChange={(e) =>
-          SetItemId(e.target.value)} type='number' min={0} max={20} maxLength="2" placeholder='параграф...'></input> */}
         <select className='Select-class' onChange={(e) => SetItemId(e.target.value)} name="languages" id="lang">
           {
             ResObj?.map((item) => (
@@ -55,20 +67,23 @@ export default function HomeWorkForm() {
             ))
           }
         </select>
-
       </label>
-
       <label>
         Опис домашнього
         <input type='text' value={Desc} onChange={(e) =>
           SetDesc(e.target.value)} placeholder='параграф...'></input>
-
-      </label><label>
+      </label>
+      <label>
         Дату дз
         <input className='DateInpt' value={Dates} onChange={(e) =>
           SetDates(e.target.value)} type='date' placeholder='дата...'></input>
       </label>
-
+      <label>
+        Це контрольна?
+        <div className='CheckboxInp'>
+          <input className='Checkbox' value={IsControl} onChange={() => SetIsControl(prev => !prev)} type='checkbox'></input>
+        </div>
+      </label>
       <input className='CreateBtn' onClick={() => CreateHome()} type="button" value={"Створити"} />
     </div>
   )

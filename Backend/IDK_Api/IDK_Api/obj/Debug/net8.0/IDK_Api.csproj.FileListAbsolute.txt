@@ -355,3 +355,12 @@ D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\obj\Debug\net8.0\ref\IDK_Api.
 D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\FluentValidation.dll
 D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\FluentValidation.AspNetCore.dll
 D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.Abstractions.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.Extensions.Hosting.Abstractions.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.Extensions.ObjectPool.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.Extensions.WebEncoders.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\System.Security.Cryptography.Xml.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
+D:\MYWORKITSTEP\ASPNETCore\Backend\IDK_Api\IDK_Api\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

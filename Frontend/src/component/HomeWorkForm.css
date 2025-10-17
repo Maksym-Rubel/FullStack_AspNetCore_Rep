@@ -118,5 +118,24 @@ label {
     color: black;
     border: 0;
     outline: 0;
-    
+
+}
+
+.Checkbox {
+    width: 30px;
+    margin: 0;
+}
+
+.CheckboxInp {
+    width: clamp(300px, 50vw, 1000px);
+    background-color: #6d8af7;
+    height: 50px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 15px;
+    padding: 20px;
+    /* padding-left: 10px; */
+    box-sizing: border-box;
+    overflow: hidden;
 }

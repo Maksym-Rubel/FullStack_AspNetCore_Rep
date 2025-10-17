@@ -1,4 +1,5 @@
 ﻿using DataAccess.Data.Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 using System;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Data
 {
-    public class SongDbContext : DbContext
+    public class SongDbContext : IdentityDbContext<User>
     {
 
         public SongDbContext()
@@ -23,12 +24,14 @@ namespace DataAccess.Data
 
         public DbSet<HomeWorkItem> homeWorkItems { get; set; }
         public DbSet<WeekDay> WeekDays { get; set; }
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
+
 
 
         //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         //{
         //    base.OnConfiguring(optionsBuilder);
-           
+
         //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

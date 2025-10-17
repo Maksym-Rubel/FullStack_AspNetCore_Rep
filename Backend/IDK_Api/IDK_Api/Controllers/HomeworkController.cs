@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs;
+using BusinessLogic.Interface;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
+using IDK_Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace IDK_Api.Controllers
@@ -10,45 +13,38 @@ namespace IDK_Api.Controllers
     [ApiController]
     public class HomeworkController : ControllerBase
     {
-        readonly SongDbContext ctx;
-        readonly IMapper mapper;
-        public HomeworkController(SongDbContext ctx, IMapper mapper)
+        private readonly IHomeworkService homeworkService;
+        public HomeworkController(IHomeworkService homeworkService)
         {
-
-            this.ctx = ctx;
-            this.mapper = mapper;
+            this.homeworkService = homeworkService; 
         }
 
         [HttpGet("GeHomeWorkItems")]
-        public IActionResult GeHomeWorkItems(DateTime dateTime)
+        //[Authorize]
+        public async Task<ActionResult<IEnumerable<HomeWorkItemDto>>> GeHomeWorkItems(DateTime dateTime)
         {
-            var dateonly = dateTime.Date;
-            var nextDay = dateonly.AddDays(1);
-            var model = ctx.homeWorkItems
-                .Where(m => m.HomeWorkDate >= dateonly && m.HomeWorkDate < nextDay).ToList();
-
-            //var entity = mapper.Map<HomeWorkItemDto>(model);
-            return Ok(model);
+            return Ok(await homeworkService.GeHomeWorkItems(dateTime));
 
         }
+
         [HttpPost("CreateHomeWork")]
+        [Authorize(Roles = Roles.ADMIN)]
 
-        public IActionResult CreateHomeWork(HomeWorkItemDto model)
+        public async Task<ActionResult<HomeWorkItemCreateDto>> CreateHomeWork(HomeWorkItemCreateDto model)
         {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest("Error");
-            }
-            if(!ctx.homeWorkItems.Any(m=> m.ItemId == model.ItemId && m.HomeWorkDate == model.HomeWorkDate && m.Decription == model.Decription))
-            {
-                var entity = mapper.Map<HomeWorkItem>(model);
-                ctx.homeWorkItems.Add(entity);
-                ctx.SaveChanges();
+            return Ok(await homeworkService.CreateHomeWork(model));
+        }
 
-                return Created();
-            }
-            return BadRequest("Item with this parametres alredy created");
 
+        [HttpDelete("RemoveItem")]
+        [Authorize(Roles = Roles.ADMIN)]
+
+        public async Task<IActionResult> RemoveItem(int Id)
+        {
+            await homeworkService.Delete(Id);
+          
+
+            return NoContent();
         }
     }
 }

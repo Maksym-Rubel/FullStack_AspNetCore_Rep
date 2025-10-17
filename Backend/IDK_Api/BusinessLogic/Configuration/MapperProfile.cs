@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs;
+using BusinessLogic.DTOs.Account;
 using DataAccess.Data.Entities;
 using System;
 using System.Collections.Generic;
@@ -27,6 +28,14 @@ namespace BusinessLogic.Configuration
 
             CreateMap<HomeWorkItemDto, HomeWorkItem>();
             CreateMap<HomeWorkItem, HomeWorkItemDto>();
+            CreateMap<HomeWorkItemCreateDto, HomeWorkItem>();
+            CreateMap<HomeWorkItem, HomeWorkItemCreateDto>();
+
+            CreateMap<RegisterModel, User>()
+                .ForMember(x=> x.UserName, opt => opt.MapFrom(s => s.Email))
+                .ForMember(x => x.PasswordHash, opt => opt.Ignore());
+
+
         }
     }
 }

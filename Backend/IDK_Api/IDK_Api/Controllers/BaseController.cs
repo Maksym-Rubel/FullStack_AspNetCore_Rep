@@ -1,7 +1,10 @@
 ﻿using AutoMapper;
 using BusinessLogic.DTOs;
+using BusinessLogic.Interface;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
+using IDK_Api.Helpers;
+using Microsoft.AspNetCore.Authorization;
 //using IDK_Api.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
@@ -15,96 +18,34 @@ namespace IDK_Api.Controllers
     public class BaseController : ControllerBase
     {
 
-        readonly SongDbContext ctx;
-        readonly IMapper mapper;
-        public BaseController(SongDbContext ctx,IMapper mapper)
+        private readonly IBaseService baseService;
+        public BaseController(IBaseService baseService)
         {
-
-            this.ctx = ctx;
-            this.mapper = mapper;
+            this.baseService = baseService;
+            
         }
-       
-       
-        //[HttpGet("GetHomeWork")]
 
-        //public IActionResult GetHomeWork(DateTime? dateTime)
-        //{
-        //    if(dateTime != null)
-        //    {
-        //        var model = ctx.Items.Where(m=> m.);
-
-        //    }
-        //    return Ok(model);
-
-        //}
-       
-      
         [HttpPost("CreateItemWeekDay")]
-        public IActionResult CreateItemWeekDay(ItemWeekDayDto model)
+        [Authorize(Roles = Roles.ADMIN)]
+
+        public async Task<ActionResult<ItemWeekDayDto>> CreateItemWeekDay(ItemWeekDayDto model)
         {
-
-
-
             if (!ModelState.IsValid)
             {
                 return BadRequest("Error");
             }
-            var entity = mapper.Map<ItemWeekDay>(model);
-            ctx.ItemWeekDays.Add(entity);
-            ctx.SaveChanges();
-
-            return Created();
-
+            return Ok(await baseService.CreateItemWeekDay(model));
         }
         [HttpPost("CreateWeekDay")]
+        [Authorize(Roles = Roles.ADMIN)]
 
-        public IActionResult CreateWeekDay(WeekDayDto model)
+        public async Task<ActionResult<WeekDayDto>> CreateWeekDay(WeekDayDto model)
         {
-
-
-
             if (!ModelState.IsValid)
             {
                 return BadRequest("Error");
             }
-            var entity = mapper.Map<WeekDay>(model);
-            ctx.WeekDays.Add(entity);
-            ctx.SaveChanges();
-
-            return Created();
-
+            return Ok(await baseService.CreateWeekDay(model));
         }
-        
-        //[HttpPatch]
-        //public IActionResult EditHomeWorkItem(HomeWorkItem model)
-        //{
-
-
-        //    //var ModelFirst = new HomeWorkItem{
-        //    //    ItemId = 1,
-        //    //    Decription = "прочитати парграф",
-        //    //    HomeWorkDate = DateTime.Now.AddDays(1),
-        //    //};
-        //    if (!ModelState.IsValid)
-        //    {
-        //        return BadRequest("Error");
-        //    }
-
-        //    ctx.homeWorkItems.Update(model);
-        //    ctx.SaveChanges();
-
-        //    return Created();
-
-        //}
-
-        //public IActionResult GetSong(int id)
-        //{
-
-        //}
-
-        //public IActionResult Create()
-        //{
-
-        //}
     }
 }

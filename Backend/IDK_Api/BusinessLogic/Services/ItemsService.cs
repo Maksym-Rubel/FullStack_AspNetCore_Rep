@@ -3,6 +3,7 @@ using BusinessLogic.DTOs;
 using BusinessLogic.Interface;
 using DataAccess.Data;
 using DataAccess.Data.Entities;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -20,43 +21,52 @@ namespace BusinessLogic.Services
             this.ctx = ctx;
             this.mapper = mapper;
         }
-        public ItemDto? GetOneItem(int id)
+        public async Task<ItemDto>? GetOneItem(int id)
         {
             var model = ctx.Items
-                .FirstOrDefault(m => m.Id == id);
-            var entity = mapper.Map<ItemDto>(model);
-            return entity;
+                .FirstOrDefaultAsync(m => m.Id == id);
+            return mapper.Map<ItemDto>(model); 
         }
-        public IList<ItemDto>? GetDayItems(DateTime dateTime, int WeekDay)
+        public async Task<IList<ItemDto>>? GetAllItem(int? WeekDay = null)
         {
-            var modelret = new List<Item>();
-            var dateonly = dateTime.Date;
-            var nextDay = dateonly.AddDays(7 - WeekDay);
-            var model = ctx.WeekDays.Where(m => m.DayOfWeek == WeekDay && m.DayInCalendar >= dateonly && m.DayInCalendar < nextDay).FirstOrDefault();
-            if (model != null)
+            if(WeekDay != null)
             {
-                var ItemList = ctx.ItemWeekDays.Where(m => m.DayId == model.Id).ToList();
-                foreach (var item in ItemList)
+                var modelret = new List<Item>();
+                //var dateonly = dateTime.Value.Date;
+                //var nextDay = dateonly.AddDays(7 - WeekDay.Value);
+                //Console.WriteLine("nextDay = " + nextDay);
+                var model2 = await ctx.WeekDays.FirstOrDefaultAsync(m => m.DayOfWeek == WeekDay);
+                if (model2 != null)
                 {
-                    if (ctx.Items.Any(m => item.ItemId == m.Id))
+                    var ItemList = ctx.ItemWeekDays.Where(m => m.DayId == model2.Id).ToList();
+                    foreach (var item in ItemList)
                     {
-                        modelret.Add(ctx.Items.FirstOrDefault(m => item.ItemId == m.Id));
+                        if (ctx.Items.Any(m => item.ItemId == m.Id))
+                        {
+                             modelret.Add(await ctx.Items.FirstOrDefaultAsync(m => item.ItemId == m.Id));
+                        }
                     }
+                    return mapper.Map<IList<ItemDto>>(modelret);
                 }
-                return mapper.Map<IList<ItemDto>>(modelret);
+                else
+                {
+                    Console.WriteLine("Null");
+                    return new List<ItemDto>();
+
+                }
             }
-            return new List<ItemDto>();
+            else
+            {
+                var model = ctx.Items;
+                return mapper.Map<IList<ItemDto>>(model.ToList());
+            }
+                
         }
-        public IList<ItemDto>? GetAllItem()
-        {
-            var model = ctx.Items;
-            return mapper.Map<IList<ItemDto>>(model);
-        }
-        public CreateItemDto? CreateItem(CreateItemDto model)
+        public async Task<CreateItemDto>? CreateItem(CreateItemDto model)
         {
             var entity = mapper.Map<Item>(model);
             ctx.Items.Add(entity);
-            ctx.SaveChanges();
+            ctx.SaveChangesAsync();
 
             return mapper.Map<CreateItemDto>(entity);
 

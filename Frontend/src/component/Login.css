@@ -1,8 +1,8 @@
 .Login-class {
     width: min-content;
     height: min-content;
-    padding-top: clamp(20px,10%,50px);
-    padding-bottom: clamp(20px,10%,50px);
+    padding-top: clamp(20px, 10%, 50px);
+    padding-bottom: clamp(20px, 10%, 50px);
 
 
     /* background-color: #060010; */
@@ -21,10 +21,10 @@
     left: 50%;
     border-radius: 30px;
 
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
 }
-@media(max-width:800px)
-{
+
+@media(max-width:800px) {
     .Login-class {
         border: 0;
         backdrop-filter: blur(0px);
@@ -32,11 +32,14 @@
 
     }
 }
+
 .Text-class {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: "BBH Sans Hegarty", sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
     z-index: 3;
-    color: white;
-    font-size: clamp(10px,10vw,30px);
+    color: black;
+    font-size: clamp(10px, 10vw, 30px);
     font-weight: bolder;
 
 }
@@ -72,11 +75,12 @@
     /* color: wheat; */
     border: 0;
     outline: none;
-    -webkit-tap-highlight-color: transparent;   
+    -webkit-tap-highlight-color: transparent;
     z-index: 3;
 
     /* box-shadow: 0px 0px 10px 3px rgb(202, 202, 202); */
 }
+
 .PurpleBtnRight {
     position: absolute;
     left: 50%;
@@ -90,11 +94,11 @@
     /* color: wheat; */
     border: 0;
     outline: none;
-    -webkit-tap-highlight-color: transparent;   
+    -webkit-tap-highlight-color: transparent;
     /* box-shadow: 0px 0px 10px 3px rgb(202, 202, 202); */
 }
-.InlinePading-div-class
-{
+
+.InlinePading-div-class {
     width: 100%;
     height: 100%;
     border-radius: 32px;
@@ -104,6 +108,7 @@
     z-index: 3;
 
 }
+
 .Label-class {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
@@ -111,6 +116,81 @@
     gap: 5px;
     z-index: 3;
 
+}
+
+.Label-class1 {
+    display: flex;
+    width: 100%;
+
+    color: black;
+    gap: 5px;
+    justify-content: start;
+    align-items: start;
+    z-index: 3;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+
+
+}
+
+.Label-class1 input {
+    width: 100%;
+
+    height: 50px;
+    background-color: white;
+    outline: none;
+    border: 0;
+    color: black;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 8px;
+    padding-left: 15px;
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    box-sizing: border-box;
+    z-index: 3;
+    border: 1px solid #4a3aff73;
+    font-family: "Inter", sans-serif;
+
+
+}
+
+.LoginBtn-class1 {
+    width: 100%;
+
+    height: 50px;
+    border-radius: 16px;
+    background-color: white;
+    color: rgb(255, 255, 255);
+    font-family: "Inter", sans-serif;
+    background: linear-gradient(to bottom, #897FFF, #4A3AFF);
+    /* letter-spacing: 1px; */
+    font-weight: bold;
+    font-size: 16px;
+    border: 0;
+    outline: none;
+    margin-top: 15px;
+    z-index: 3;
+    transition: all 0.3s ease-in-out;
+    box-shadow: inset 0 4px 5px rgba(255, 255, 255, 0.3);
+}
+
+.LoginBtn-class1:active {
+
+    background: linear-gradient(to bottom, #695deeb7, #4A3AFF);
+
+}
+
+.Label-class1 input:focus {
+    border: 1px solid #4A3AFF;
+
+}
+
+.Label-class1 input::placeholder {
+    color: #6F6C8F;
 }
 
 .Label-class input {
@@ -151,13 +231,14 @@
     outline: none;
     margin-top: 15px;
     z-index: 3;
-    transition:  all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
-.LoginBtn-class:hover
-{
+
+.LoginBtn-class:hover {
 
     transform: scale(1.05);
 }
+
 .LoginBtn-class:active {
     background-color: white;
 
@@ -182,7 +263,7 @@
     background-color: transparent;
     border: 0;
     z-index: 4;
-    -webkit-tap-highlight-color: transparent;   
+    -webkit-tap-highlight-color: transparent;
     color: black;
 
 }
@@ -203,48 +284,235 @@
     background-color: transparent;
     color: black;
     border: 0;
-    -webkit-tap-highlight-color: transparent;   
+    -webkit-tap-highlight-color: transparent;
 
     z-index: 4;
 
 }
 
 
-#FirstBlobPosId
-{
-    position:absolute;
+#FirstBlobPosId {
+    position: absolute;
     top: -10px;
     left: 0;
     z-index: 0;
-    width: clamp(100px,50vw,300px);
+    width: clamp(100px, 50vw, 300px);
 }
-#SecondBlobPosId
-{
-    position:absolute;
+
+#SecondBlobPosId {
+    position: absolute;
     top: -10px;
     left: -10px;
-    z-index:1;
-    width: clamp(100px,50vw,300px);
+    z-index: 1;
+    width: clamp(100px, 50vw, 300px);
 }
-#ThirdBlobPosId{
-    position:absolute;
- 
-  
+
+#ThirdBlobPosId {
+    position: absolute;
+
+
     /* transform: rotateZ(-10deg); */
 
     bottom: -15px;
     right: -11px;
-    z-index:1;
-    width: clamp(100px,60   vw,400px);
+    z-index: 1;
+    width: clamp(100px, 60 vw, 400px);
 }
-#FourBlobPosId
-{
-     position:absolute;
- 
-  
+
+#FourBlobPosId {
+    position: absolute;
+
+
     transform: rotateZ(180deg);
     bottom: -15px;
     right: -10px;
-    z-index:0;
-    width: clamp(100px,60vw,420px);
+    z-index: 0;
+    width: clamp(100px, 60vw, 420px);
+}
+
+.FirstDivDesign {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    justify-content: center;
+
+}
+
+
+
+
+.forgotPass-class {
+    width: 100%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    color: #8C82FF;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.forgotPass-class p:hover {
+    color: #8c82ffd6;
+    cursor: pointer;
+    text-decoration: underline;
+
+}
+
+.Regist-class {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #0000008a;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.Regist-class span:hover {
+    color: #000000b1;
+
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.ImgBack {
+    width: 60px;
+    height: 60px;
+    box-shadow: inset 0 1px 10px rgb(236, 236, 236);
+    border-radius: 16px;
+    /* background-color: red; */
+    background-image: url(/public/imgs/logo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 60%;
+    border: 1px solid rgba(0, 0, 0, 0.049);
+    z-index: 100;
+}
+
+.LoginItemsBack {
+    /* background-color: rgb(213, 213, 213); */
+    flex: 1;
+    margin-left: clamp(10px, 10%, 20px);
+    margin-right: clamp(10px, 10%, 20px);
+    margin-top: 3%;
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding: 10%;
+    box-sizing: border-box;
+    gap: 11px;
+
+
+
+
+}
+
+.LoginDivMenu {
+    width: clamp(400px, 45%, 800px);
+    /* background-color: rebeccapurple; */
+    display: flex;
+    justify-content: center;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+}
+
+.FontMain p {
+    font-size: clamp(20px, 3vw, 36px);
+    white-space: nowrap;
+
+}
+
+.FontSecond p {
+    font-size: clamp(12px, 2vw, 18px);
+    color: #6F6C8F;
+    font-weight: 500;
+    white-space: nowrap;
+
+}
+
+.LoginImage {
+    flex: 1;
+    /* background-color: red; */
+    padding: clamp(3px, 1vw, 20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageBack2323 {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: #f1f2f9;
+    background: url(/public/imgs/smile.png);
+    background-size: 70%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    /* background: linear-gradient(to top, rgb(121, 84, 84),black); */
+    box-shadow: 0px 0px 10px rgba(144, 0, 255, 0.112);
+}
+
+
+.MobileGradient {
+    position: absolute;
+    /* background-color: rgba(255, 0, 0, 0.297); */
+    overflow: hidden;
+    z-index: 20;
+    inset: 0;
+    display: none;
+    pointer-events: none;
+}
+
+@media(max-width:1100px) {
+    .LoginImage {
+        display: none;
+    }
+
+    .MobileGradient {
+        display: flex;
+
+    }
+}
+
+.BallViolet {
+    width: clamp(100px, 60vw, 250px);
+
+    height: clamp(100px, 60vw, 250px);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ffffff00, #4A3AFF);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    left: -3vw;
+}
+
+.BallRed {
+    width: clamp(100px, 60vw, 300px);
+    height: clamp(100px, 60vw, 300px);
+    /* background-color: red; */
+    background: linear-gradient(45deg, #ffffff00, #9c3affcd);
+    border-radius: 50%;
+    filter: blur(30px);
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30px;
+    right: -40vw;
+}
+
+.Link-class {
+    text-decoration: none;
+    color: transparent;
+    color: #0000008a;
+
+
 }

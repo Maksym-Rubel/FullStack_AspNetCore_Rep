@@ -10,6 +10,7 @@ namespace DataAccess.Data.Entities
     {
         public int Id { get; set; }
         public string Name { get; set; }
+
         public ICollection<WeekDay>? Days { get; set; }
         public ICollection<HomeWorkItem>? HomeWorkItems { get; set; }
      

@@ -12,6 +12,8 @@ namespace DataAccess.Data.Entities
         public int ItemId { get; set; } 
         public Item? Item { get; set; }
         public string Decription         {  get; set; }
+        public bool IsControlWork { get; set; } = false;
+
 
         public DateTime HomeWorkDate { get; set; }
 
